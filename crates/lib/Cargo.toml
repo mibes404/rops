@@ -75,7 +75,8 @@ textwrap = { workspace = true, optional = true }
 indoc = { workspace = true, optional = true }
 
 [target.'cfg(target_arch = "wasm32-unknown-unknown")'.dependencies]
-getrandom = { version = "0.3", features = ["wasm_js"] }
+getrandom = { version = "0.2", default-features = false, features = ["js"] }
+
 
 [dev-dependencies]
 serial_test.workspace = true
