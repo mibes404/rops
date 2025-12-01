@@ -74,6 +74,7 @@ pretty_assertions = { workspace = true, optional = true }
 textwrap = { workspace = true, optional = true }
 indoc = { workspace = true, optional = true }
 
+[target.'cfg(target_arch = "wasm32-unknown-unknown")'.dependencies]
 getrandom = { version = "0.2", default-features = false, features = ["js"] }
 getrandom_03 = { package = "getrandom", version = "0.3", default-features = false, features = ["wasm_js"] }
 
