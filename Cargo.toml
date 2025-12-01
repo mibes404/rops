@@ -14,7 +14,7 @@ version = "0.1.5"
 
 [workspace.dependencies]
 aes-gcm = { version = "0.10", features = ["std"] }
-age = { version = "0.11", default-features = false }
+age = "0.11"
 anyhow = "1"
 aws-arn = "0.3"
 aws-sdk-kms = { version = "1.90", features = ["behavior-version-latest"] }
