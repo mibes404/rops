@@ -74,6 +74,9 @@ pretty_assertions = { workspace = true, optional = true }
 textwrap = { workspace = true, optional = true }
 indoc = { workspace = true, optional = true }
 
+[target.'cfg(target_arch = "wasm32-unknown-unknown")'.dependencies]
+getrandom = { version = "0.3", features = ["wasm_js"] }
+
 [dev-dependencies]
 serial_test.workspace = true
 tempfile.workspace = true
